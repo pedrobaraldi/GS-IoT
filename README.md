@@ -46,6 +46,7 @@ Este projeto utiliza um ESP32 conectado a um sensor DHT22 para medir temperatura
    4.2 Tópico para umidade: WOKWI_DHT_UMID.
 
    4.3 Broker: test.mosquitto.org.
+
 Com isso, o fluxo estará pronto para uso, incluindo gráficos e medidores de temperatura e umidade.
 
 
