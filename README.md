@@ -1,6 +1,6 @@
 # Monitoramento de Temperatura e Umidade com ESP32 e Node-RED
-
-Link do projeto no Wokwi: [Clique aqui](https://wokwi.com/projects/414485137960169473)  
+Link do video no YouTube: [Clique aqui](https://youtu.be/Scx7vx8w3jU)  
+Link do projeto no Wokwi: [Clique aqui](https://wokwi.com/projects/414485137960169473) 
 
 Este projeto utiliza um **ESP32** conectado a um **sensor DHT22** para medir temperatura e umidade. Os dados são enviados para um broker MQTT e visualizados no **Node-RED**.
 
