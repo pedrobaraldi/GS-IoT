@@ -4,8 +4,7 @@ Link do projeto no Wokwi: [Clique aqui](https://wokwi.com/projects/4144851379601
 
 Este projeto utiliza um **ESP32** conectado a um **sensor DHT22** para medir temperatura e umidade. Os dados são enviados para um broker MQTT e visualizados no **Node-RED**.
 
-![Exemplo de Dashboard](![image](https://github.com/user-attachments/assets/3eeb27c5-dd93-484e-ae5c-7fa9d2ced43d)
-)
+![image](https://github.com/user-attachments/assets/3eeb27c5-dd93-484e-ae5c-7fa9d2ced43d)
 
 ---
 
