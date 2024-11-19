@@ -46,7 +46,8 @@ Este projeto utiliza um **ESP32** conectado a um **sensor DHT22** para medir tem
 - **LED roxo aceso**: conexão ao broker MQTT.  
 - **Dados em tempo real no Node-RED**: visualização de temperatura e umidade em gráficos e medidores.
 
-[**Acesse o Dashboard**](http://localhost:1880/dashboard/page1)  
+↳ **LINK DE ACESSO AO DASHBOARD:** [http://localhost:1880/dashboard/page1]  
+
 
 ---
 
@@ -67,3 +68,13 @@ O fluxo do Node-RED está exportado no arquivo [`node_red_config.json`](https://
    - Broker: `test.mosquitto.org`.  
 
 Após importar, o fluxo estará pronto, incluindo gráficos e medidores de temperatura e umidade.  
+
+---
+# Integrantes e RM
+-> Julia Akemi | RM: 98032
+
+-> Mateus Fattori | RM: 97904 
+
+-> Bianca Barreto | RM: 551848
+
+-> Pedro Baraldi Sa | RM: 98060
