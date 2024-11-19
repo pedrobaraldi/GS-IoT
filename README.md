@@ -52,7 +52,9 @@ Este projeto utiliza um **ESP32** conectado a um **sensor DHT22** para medir tem
 
 ## Configuração do Node-RED  
 
-O fluxo do Node-RED está exportado no arquivo `node_red_config.json`.  
+![image](https://github.com/user-attachments/assets/05b1346e-2264-4496-9fd1-422649eddc0d)
+
+O fluxo do Node-RED está exportado no arquivo [`node_red_config.json`](https://github.com/pedrobaraldi/GS-IoT/blob/main/node_red_config.json).  
 
 ### Como importar:  
 
