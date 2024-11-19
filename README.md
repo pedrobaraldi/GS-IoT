@@ -1,5 +1,4 @@
-# GS-IoT
-## Monitoramento de Temperatura e Umidade com ESP32 e Node-RED
+# Monitoramento de Temperatura e Umidade com ESP32 e Node-RED
 Este projeto utiliza um ESP32 conectado a um sensor DHT22 para medir temperatura e umidade. Os dados são enviados para um broker MQTT e visualizados no Node-RED.
 
 ### Funcionalidades
