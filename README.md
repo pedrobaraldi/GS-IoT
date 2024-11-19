@@ -30,7 +30,8 @@ Este projeto utiliza um ESP32 conectado a um sensor DHT22 para medir temperatura
 - O LED azul acende ao conectar ao Wi-Fi.
 - O LED roxo acende ao conectar ao broker MQTT.
 - Dados de temperatura e umidade são exibidos no Node-RED em tempo real.
-- ↳ LINK DE ACESSO AO DASHBOARD [http://localhost:1880/dashboard/page1]
+
+  ↳ LINK DE ACESSO AO DASHBOARD [http://localhost:1880/dashboard/page1]
 
 
 ### Integrantes
