@@ -35,7 +35,7 @@ Este projeto utiliza um ESP32 conectado a um sensor DHT22 para medir temperatura
 
 # Configuração do Node-RED
   ![image](https://github.com/user-attachments/assets/b6499790-36b6-451e-81fe-b13409240cde)
-### O fluxo do Node-RED está exportado no arquivo node_red_config.json, incluído neste repositório. Para importar, siga os passos abaixo:
+### O fluxo do Node-RED está exportado no arquivo [node_red_config.json](https://github.com/pedrobaraldi/GS-IoT/blob/main/node_red_config.json), incluído neste repositório. Para importar, siga os passos abaixo:
 1. Abra o Node-RED.
 2. Clique no menu no canto superior direito (três linhas horizontais) e selecione Importar.
 3. Carregue o arquivo node_red_config.json.
