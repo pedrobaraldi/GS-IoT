@@ -1,0 +1,452 @@
+[
+    {
+        "id": "195fa8039d5197dc",
+        "type": "tab",
+        "label": "GS MQTT",
+        "disabled": false,
+        "info": "",
+        "env": []
+    },
+    {
+        "id": "d5adc4f65ca44d98",
+        "type": "debug",
+        "z": "195fa8039d5197dc",
+        "name": "debug 1",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "c4ef3ad38cb4433b",
+        "type": "mqtt in",
+        "z": "195fa8039d5197dc",
+        "name": "",
+        "topic": "WOKWI_DHT_TEMP",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6ec4dcef.913b24",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 180,
+        "wires": [
+            [
+                "d5adc4f65ca44d98",
+                "150c46fb9e60a928",
+                "018d36277928c8a0"
+            ]
+        ]
+    },
+    {
+        "id": "150c46fb9e60a928",
+        "type": "ui-gauge",
+        "z": "195fa8039d5197dc",
+        "name": "",
+        "group": "61ef1ea4549c221b",
+        "order": 1,
+        "width": "3",
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "Medidor de temperatura",
+        "units": "units",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 550,
+        "y": 240,
+        "wires": []
+    },
+    {
+        "id": "018d36277928c8a0",
+        "type": "ui-chart",
+        "z": "195fa8039d5197dc",
+        "group": "1a7b0f7656da0e46",
+        "name": "",
+        "label": "Analise Grafica Temperatura",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#ff6600",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "9",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 560,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "11f530f48f2e030f",
+        "type": "mqtt in",
+        "z": "195fa8039d5197dc",
+        "name": "",
+        "topic": "WOKWI_DHT_UMID",
+        "qos": "2",
+        "datatype": "auto-detect",
+        "broker": "6ec4dcef.913b24",
+        "nl": false,
+        "rap": true,
+        "rh": 0,
+        "inputs": 0,
+        "x": 240,
+        "y": 360,
+        "wires": [
+            [
+                "d05938d476f123d6",
+                "819893ac2c657a9d",
+                "ac15126aa5d401a8"
+            ]
+        ]
+    },
+    {
+        "id": "d05938d476f123d6",
+        "type": "debug",
+        "z": "195fa8039d5197dc",
+        "name": "debug 2",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 500,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "819893ac2c657a9d",
+        "type": "ui-gauge",
+        "z": "195fa8039d5197dc",
+        "name": "",
+        "group": "a75cc65ab8acb973",
+        "order": 1,
+        "width": 3,
+        "height": "4",
+        "gtype": "gauge-34",
+        "gstyle": "needle",
+        "title": "Medidor de Umidade",
+        "units": "%",
+        "icon": "",
+        "prefix": "",
+        "suffix": "",
+        "segments": [
+            {
+                "from": "0",
+                "color": "#5cd65c"
+            },
+            {
+                "from": "4",
+                "color": "#ffc800"
+            },
+            {
+                "from": "7",
+                "color": "#ea5353"
+            }
+        ],
+        "min": 0,
+        "max": "100",
+        "sizeThickness": 16,
+        "sizeGap": 4,
+        "sizeKeyThickness": 8,
+        "styleRounded": true,
+        "styleGlow": false,
+        "className": "",
+        "x": 540,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "ac15126aa5d401a8",
+        "type": "ui-chart",
+        "z": "195fa8039d5197dc",
+        "group": "b3133697434cc4d0",
+        "name": "",
+        "label": "Analise Grafica Umidade",
+        "order": 1,
+        "chartType": "line",
+        "category": "topic",
+        "categoryType": "msg",
+        "xAxisLabel": "",
+        "xAxisProperty": "",
+        "xAxisPropertyType": "timestamp",
+        "xAxisType": "time",
+        "xAxisFormat": "",
+        "xAxisFormatType": "auto",
+        "xmin": "",
+        "xmax": "",
+        "yAxisLabel": "",
+        "yAxisProperty": "payload",
+        "yAxisPropertyType": "msg",
+        "ymin": "0",
+        "ymax": "100",
+        "bins": 10,
+        "action": "append",
+        "stackSeries": false,
+        "pointShape": "circle",
+        "pointRadius": 4,
+        "showLegend": true,
+        "removeOlder": 1,
+        "removeOlderUnit": "3600",
+        "removeOlderPoints": "",
+        "colors": [
+            "#00d5ff",
+            "#ff0000",
+            "#ff7f0e",
+            "#2ca02c",
+            "#a347e1",
+            "#d62728",
+            "#ff9896",
+            "#9467bd",
+            "#c5b0d5"
+        ],
+        "textColor": [
+            "#666666"
+        ],
+        "textColorDefault": true,
+        "gridColor": [
+            "#e5e5e5"
+        ],
+        "gridColorDefault": true,
+        "width": "9",
+        "height": "4",
+        "className": "",
+        "interpolation": "linear",
+        "x": 550,
+        "y": 480,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6ec4dcef.913b24",
+        "type": "mqtt-broker",
+        "name": "",
+        "broker": "test.mosquitto.org",
+        "port": "1883",
+        "clientid": "",
+        "autoConnect": true,
+        "usetls": false,
+        "protocolVersion": "4",
+        "keepalive": "15",
+        "cleansession": true,
+        "autoUnsubscribe": true,
+        "birthTopic": "",
+        "birthQos": "0",
+        "birthPayload": "",
+        "birthMsg": {},
+        "closeTopic": "",
+        "closePayload": "",
+        "closeMsg": {},
+        "willTopic": "",
+        "willQos": "0",
+        "willPayload": "",
+        "willMsg": {},
+        "userProps": "",
+        "sessionExpiry": ""
+    },
+    {
+        "id": "61ef1ea4549c221b",
+        "type": "ui-group",
+        "name": "Temperatura",
+        "page": "2b36c2dc739449c5",
+        "width": "3",
+        "height": "4",
+        "order": 1,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "1a7b0f7656da0e46",
+        "type": "ui-group",
+        "name": "Grafico da temperatura",
+        "page": "2b36c2dc739449c5",
+        "width": "9",
+        "height": "1",
+        "order": 2,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "a75cc65ab8acb973",
+        "type": "ui-group",
+        "name": "Umidade",
+        "page": "2b36c2dc739449c5",
+        "width": "3",
+        "height": "1",
+        "order": 3,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "b3133697434cc4d0",
+        "type": "ui-group",
+        "name": "Grafico de Umidade",
+        "page": "2b36c2dc739449c5",
+        "width": "9",
+        "height": "1",
+        "order": 4,
+        "showTitle": true,
+        "className": "",
+        "visible": "true",
+        "disabled": "false",
+        "groupType": "default"
+    },
+    {
+        "id": "2b36c2dc739449c5",
+        "type": "ui-page",
+        "name": "Temperatura & Umidade",
+        "ui": "36b8a0b06cae0ac6",
+        "path": "/page1",
+        "icon": "home",
+        "layout": "grid",
+        "theme": "4b50ac11bf45f49a",
+        "breakpoints": [
+            {
+                "name": "Default",
+                "px": "0",
+                "cols": "3"
+            },
+            {
+                "name": "Tablet",
+                "px": "576",
+                "cols": "6"
+            },
+            {
+                "name": "Small Desktop",
+                "px": "768",
+                "cols": "9"
+            },
+            {
+                "name": "Desktop",
+                "px": "1024",
+                "cols": "12"
+            }
+        ],
+        "order": 1,
+        "className": "",
+        "visible": "true",
+        "disabled": "false"
+    },
+    {
+        "id": "36b8a0b06cae0ac6",
+        "type": "ui-base",
+        "name": "DHT22",
+        "path": "/dashboard",
+        "appIcon": "",
+        "includeClientData": true,
+        "acceptsClientConfig": [
+            "ui-notification",
+            "ui-control"
+        ],
+        "showPathInSidebar": false,
+        "showPageTitle": true,
+        "navigationStyle": "default",
+        "titleBarStyle": "default"
+    },
+    {
+        "id": "4b50ac11bf45f49a",
+        "type": "ui-theme",
+        "name": "Default Theme",
+        "colors": {
+            "surface": "#ffffff",
+            "primary": "#0094CE",
+            "bgPage": "#eeeeee",
+            "groupBg": "#ffffff",
+            "groupOutline": "#cccccc"
+        },
+        "sizes": {
+            "density": "default",
+            "pagePadding": "12px",
+            "groupGap": "12px",
+            "groupBorderRadius": "4px",
+            "widgetGap": "12px"
+        }
+    }
+]
