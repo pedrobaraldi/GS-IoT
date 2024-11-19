@@ -39,10 +39,7 @@ Este projeto utiliza um ESP32 conectado a um sensor DHT22 para medir temperatura
 1. Abra o Node-RED.
 2. Clique no menu no canto superior direito (três linhas horizontais) e selecione Importar.
 3. Carregue o arquivo node_red_config.json.
-4. Verifique se os tópicos MQTT e o broker estão configurados corretamente:
-  4 * Tópico para temperatura: WOKWI_DHT_TEMP.
-  4 * Tópico para umidade: WOKWI_DHT_UMID.
-  4 * Broker: test.mosquitto.org.
+4. Verifique se os tópicos MQTT e o broker estão configurados corretamente: 4 * Tópico para temperatura: WOKWI_DHT_TEMP. 4 * Tópico para umidade: WOKWI_DHT_UMID. 4 * Broker: test.mosquitto.org.
 Com isso, o fluxo estará pronto para uso, incluindo gráficos e medidores de temperatura e umidade.
 
 
