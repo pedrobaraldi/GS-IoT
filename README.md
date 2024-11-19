@@ -17,11 +17,11 @@ Este projeto utiliza um ESP32 conectado a um sensor DHT22 para medir temperatura
 - Resistores
 - LEDs
 ### Esquema de ligação:
-### - DHT22
+### DHT22
 - VCC: 3.3V (ESP32)
 - GND: GND (ESP32)
 - DATA: Pino GPIO 23 (ESP32)
-### - LEDs
+### LEDs
 - LED azul: Pino GPIO 2 (indica conexão Wi-Fi)
 - LED roxo: Pino GPIO 15 (indica conexão MQTT)
 - Ambos conectados ao GND através de resistores.
@@ -47,8 +47,11 @@ Este projeto utiliza um ESP32 conectado a um sensor DHT22 para medir temperatura
 
 
 
-
-
+## Resultado Esperado
+- O LED azul acende ao conectar ao Wi-Fi.
+- O LED roxo acende ao conectar ao broker MQTT.
+- Dados de temperatura e umidade são exibidos no Node-RED em tempo real.
+  ↳ LINK DE ACESSO AO DASHBOARD [http://localhost:1880/dashboard/page1]
 
 
 ### Integrantes
