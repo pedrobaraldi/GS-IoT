@@ -62,7 +62,9 @@ O fluxo do Node-RED está exportado no arquivo [`node_red_config.json`](https://
 2. Clique no menu no canto superior direito (três linhas horizontais) e selecione **Settings**.
 3. No canto esquerdo da aba que ira abrir (User Settings) selecione **Palette**.
 4. Clique em **Install** e baixe as seguintes extensoes.
-![Captura de tela 2024-11-22 162112](https://github.com/user-attachments/assets/e9407bf2-6c21-4bc5-8434-a8c6ab414706)
+
+  ![Captura de tela 2024-11-22 162112](https://github.com/user-attachments/assets/e9407bf2-6c21-4bc5-8434-a8c6ab414706)
+
 
 ### Como importar:    
 1. Abra o Node-RED.  
